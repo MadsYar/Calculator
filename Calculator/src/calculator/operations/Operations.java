@@ -49,7 +49,7 @@ public abstract class Operations {
 	
 	public static Operations parseOperator(String o) {
 		
-		Operations[] ops = new Operations[]{ new Addition(), new Multiplication() };
+		Operations[] ops = new Operations[]{ new Addition(), new Multiplication(), new Subtraction() };
 		
 		for (Operations op: ops) {
 			if(o.equals(op.getOperator())) {
